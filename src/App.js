@@ -13,6 +13,7 @@ export const App = () => {
 
   useEffect(() => {
     localStorage.setItem('user', JSON.stringify(user));
+    localStorage.setItem('TOKEN_KEY',user.access_token);
   }, [user] );
 
   return (
